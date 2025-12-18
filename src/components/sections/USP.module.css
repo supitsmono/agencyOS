@@ -1,0 +1,40 @@
+.section {
+    padding: var(--spacing-xl) 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.card {
+    padding: var(--spacing-md);
+    text-align: left;
+    /* Minimal look, no border or background by default unless needed */
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-main);
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text-main);
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

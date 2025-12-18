@@ -1,0 +1,83 @@
+.hero {
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    /* Narrower for text */
+}
+
+.heading {
+    font-size: 3.5rem;
+    /* Large and bold */
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-main);
+}
+
+.subheading {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: var(--spacing-lg);
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: var(--spacing-xl);
+}
+
+.primaryCta {
+    background-color: var(--color-text-main);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.primaryCta:hover {
+    opacity: 0.9;
+}
+
+.secondaryCta {
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    padding: 1rem 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.secondaryCta:hover {
+    background-color: var(--color-bg-alt);
+}
+
+.dashboardPreview {
+    width: 100vw;
+    max-width: 1000px;
+    height: 600px;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.previewBox {
+    color: var(--color-text-secondary);
+    font-size: 0.875rem;
+}
